@@ -2,8 +2,10 @@
 
 - name: Prepare
   hosts: all
+  gather_facts: no
   tasks:
     - name: Installing Role dependencies
       ansible.builtin.apt:
         name: ['kmod']
         state: present
+        update_cache: true
