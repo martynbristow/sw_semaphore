@@ -10,4 +10,4 @@ sem_conditionals_config:
 
   port: "{{ SEM_CONFIG.config.port | default(SEM_config.nginx.proxy.port, true) }}"
   tmp_path: "{{ SEM_CONFIG.config.tmp_path | default(SEM_config.path.tmp, true) }}"
-DL_URL: "{{ SEM_HC.dl_base_url }} /v {{ defaults_sem.version }}/semaphore_{{ defaults_sem.version }}_linux_{{ defaults_sem.arch }}.tar.gz"}}"
+DL_URL: "{{ SEM_HC.dl_base_url }} /v {{ defaults_sem.version }}/semaphore_{{ defaults_sem.version }}_linux_{{ defaults_sem.arch }}.tar.gz"
