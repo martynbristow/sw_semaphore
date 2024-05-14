@@ -57,7 +57,7 @@
 
     - name: Semaphore | Install | Downloading
       ansible.builtin.unarchive:
-        src: "{{ SEM_HC.dl_link }}"
+        src: "{{ SEM_HC.DL_URL }}"
         dest: "{{ sem_dl_dir.path }}"
         remote_src: true
 
